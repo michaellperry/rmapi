@@ -69,7 +69,7 @@ func RunShell(apiCtx api.ApiCtx, userInfo *api.UserInfo, args []string, jsonOutp
 	shell.AddCmd(statCmd(ctx))
 	shell.AddCmd(getACmd(ctx))
 	shell.AddCmd(findCmd(ctx))
-	shell.AddCmd(nukeCmd(ctx))
+	// shell.AddCmd(nukeCmd(ctx)) // DISABLED - nuke command
 	shell.AddCmd(accountCmd(ctx))
 	shell.AddCmd(refreshCmd(ctx))
 
